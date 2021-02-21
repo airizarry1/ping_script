@@ -6,6 +6,7 @@
  
 ___
 ##### About the Ping Script
+
 `Goal`	Simple script to test and verify that a list of ip addresses are up or down
 
 `Who can contribute?`	This code was written for the community. Feel free to clone the code and to push changes for peer review!
@@ -14,6 +15,7 @@ ___
 
 ___
 ##### Follow Me
+
 `Twitter`	https://twitter.com/labeveryday
 
 `YouTube`	https://youtube.com/labeveryday

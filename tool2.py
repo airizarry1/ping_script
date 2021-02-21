@@ -39,7 +39,7 @@ for ip in ip_list:
         net_connect = ConnectHandler(ip=ip, username=username,
                                      password=password,
                                      device_type=device_type)
-        print('\nPing successsful. Now connecting to: ', ip)
+        print('\nPing successsful.\nNow connecting to: ', ip)
         running_config = net_connect.send_command('show run')
         hostname = net_connect.send_command('show run | in hostname')[9:]
         version = net_connect.send_command('sh version | in System image |Cisco_IOS')

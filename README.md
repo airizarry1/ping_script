@@ -33,19 +33,6 @@ python3 -m venv venv
 
 ## Example: Script in action
 
-Before executing your script you must update your device ip address list in the `ip_file.txt` file. This will be the list of ip addresses that will be used in the script.
-
-```bash
-(venv) duan@ubuntu ping_script$ cat ip_file.txt 
-192.168.23.142
-192.168.23.143
-192.168.23.144
-192.168.23.145
-192.168.23.146
-192.168.23.147
-8.8.8.8
-```
-
 Now that you have everything installed and updated you can execute the script
 
 ```bash

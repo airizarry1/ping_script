@@ -1,6 +1,6 @@
 # Welcome to the Ping Script
 
-This is a script that leverages the [os library](https://docs.python.org/3/library/os.html) to ping a network device to verify if the device is up or down. Use this script to learn the basics of python.
+This is a script that leverages the [os library](https://docs.python.org/3/library/os.html) to ping a network device to verify if the device is up or down and output the status to `results.txt`. Use this script to learn the basics of python.
 
 ## Download the Code
 
@@ -58,8 +58,15 @@ Up 192.168.23.144 Ping successful
 
 ```
 
->NOTE: To modify the subnets and the range
+>NOTE: To modify the subnets and the range change the starting digit and the ending digit in line 18.
 
+![ping_range](https://github.com/labeveryday/Notes/blob/main/images/ping_range.png)
+
+## Walk through
+
+Here is a video walk through of the `ping_script` in action.
+
+[![Watch the video](https://github.com/labeveryday/Notes/blob/main/images/ping.png)](https://youtu.be/PTUhiDnYrbs)
 
 ### About me
 

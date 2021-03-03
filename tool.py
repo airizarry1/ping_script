@@ -1,8 +1,11 @@
 #!/usr/bin/env python
-# import built-in os library
-# https://docs.python.org/3/library/os.html
-
 import os
+
+
+# Verifies your os type
+OS_TYPE = os.name
+# Sets the count modifier to the os type
+count = '-n' if OS_TYPE == 'nt' else '-c'
 
 # Open file for saving ping results
 results_file = open("results.txt", "w")
@@ -12,8 +15,8 @@ ip_list = []
 
 # Loop from 1 to 255
 # Appends the concatenated ip to the ip_list
-for ip in range(1, 256):
-    ip_list.append("192.168.1." + str(ip))
+for ip in range(1, 255):
+    ip_list.append("192.168.23." + str(ip))
 
 # Print number of ip addresses in list
 print(len(ip_list))
@@ -21,7 +24,7 @@ print(len(ip_list))
 # Loop to ping ip_list and check if device up or down
 # Outputs to results.txt file
 for ip in ip_list:
-    response = os.popen(f"ping {ip} -n 1").read()
+    response = os.popen(f"ping {ip} {count} 1").read()
     if "Received = 1" and "Approximate" in response:
         print(f"UP {ip} Ping Successful")
         results_file.write(f"UP {ip} Ping Successful" + "\n")

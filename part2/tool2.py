@@ -28,8 +28,7 @@ def ping_device(ip_list):
         rtype: None
     """
     results_file = open("results.txt", "w")
-    ip_addresses = create_ip_list()
-    for ip in ip_addresses:
+    for ip in ip_list:
         response = os.popen(f"ping {ip} {count} 1").read()
         if "Received = 1" and "Approximate" in response:
             print(f"UP {ip} Ping Successful")
